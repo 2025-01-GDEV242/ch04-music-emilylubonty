@@ -148,6 +148,15 @@ public class MusicOrganizer
         
     }
     
+    public void listPlaythough()
+    {
+        if (tracks.size() > 0) {
+            int index = randomSong.nextInt(tracks.size());
+            player.startPlaying(tracks.get(index).getFilename()); 
+            tracks.remove(index);
+        }
+    }
+    
     /**
      * Stop the player.
      */
