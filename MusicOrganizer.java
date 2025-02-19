@@ -148,6 +148,9 @@ public class MusicOrganizer
         
     }
     
+    /**
+     * Plays a random song from the index, removing it once played.
+     */
     public void listPlaythough()
     {
         if (tracks.size() > 0) {
